@@ -16,7 +16,7 @@ function merge<T, U>(objA: T, objB: U){
 
 const mergeObj = merge({nombre: 'Guido'}, {edad: '35'});
 
-//restricting types: to not allow in the call to enter wrong values
+//constrains or restricting types: to not allow in the call to enter wrong values
 
 function mergeRestricted<T extends object, U extends object>(objA: T, objB: U){
     return Object.assign(objA, objB);
